@@ -52,6 +52,44 @@ switch ($request) {
         #echo "<br> <br>";
 
         break;
+    
+    case "/registration":
+
+        include "views/reg.php";
+
+        break;
+
+    case "/createuser":
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            // Get form data
+            $name = $_POST['name'];
+            $mobile = $_POST['mobile'];
+            $password = $_POST['password'];
+            $address = $_POST['address'];
+        
+            // Display or save data (For demonstration, we're just echoing)
+    
+    
+              $sql1 = "INSERT INTO `user` (`userid`, `username`, `contactnumber`, `password`, `division`, `district`, `thana`, `village`, `DoB`) VALUES (NULL, '$name', '$mobile', '$password', 'AHSg', 'sjdnm,nm,', 'asdjJNK', 'asdBJJ', 'asdjhjh');";
+                $result1 = $conn->query($sql1);
+    
+                if ($result1 === false) {
+    
+                        echo "Error executing query: " . $conn->error;  // Print the error message
+    
+                } else {
+    
+                 #echo "Success Insert Query";
+
+                 echo "Log In Page"
+    
+                }
+            
+            #include "views/profile.php";
+        }
+
+        break;
 
 
 
