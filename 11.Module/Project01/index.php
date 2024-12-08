@@ -24,6 +24,37 @@ switch ($request) {
     case "/page1":
         include"page1.php";
         break;
+    
+    case "/page2":
+
+        echo "Page 2";
+        break;
+
+    case "/all-user":
+
+        header('Content-Type: application/json');
+
+        $sql = "SELECT * FROM `user`;";
+        $result = $conn->query($sql);
+
+        $output = $result->fetch_all(MYSQLI_ASSOC);
+
+        #echo "$output";
+
+        #print_r($output[0]["username"]);
+
+        #echo "<br> <br>";
+
+        $finaloutput = json_encode($output);
+
+        echo $finaloutput;
+
+        #echo "<br> <br>";
+
+        break;
+
+
+
 
     default:
         echo "Page not found!";

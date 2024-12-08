@@ -21,6 +21,8 @@ Delete User - Delete
 
 User Upadate - Update
 
+Get All User
+
 Registration - User Insert
 
 Doctor Add Insert
