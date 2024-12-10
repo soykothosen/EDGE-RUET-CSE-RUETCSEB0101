@@ -10,10 +10,9 @@
     <p>This is the first page. You can go to the second page by clicking the link below:</p>
     
     <!-- Link to Page 2 -->
-     <?php $Base_Url = "/EDGE-RUET-CSE-RUETCSEB0101/11.Module/Project01"?>
+     <?php $Base_Url = "/EDGE-RUET-CSE-RUETCSEB0101/12.Module/Project01"?>
 
-    <a href= "  <?php echo $Base_Url."/page2"; ?>  "> Go to Page 2</a>
-    
+    <a href= "  <?php echo $Base_Url."/home"; ?>  "> Go to Home</a>
 
   
 
