@@ -124,21 +124,35 @@ switch ($request) {
                         } else {
 
                             $output = $result1->fetch_all(MYSQLI_ASSOC);
-                            print_r($output);
+                            #print_r($output);
 
-                            
+                            $lenth =  count($output);
 
-         
-
-                            if ($password == $output[0]["password"]) {
-                                echo "Password Match". $output[0]["password"] ."";
+                            if ($lenth == 0) {
+                                echo "No User Exist";
                             } else {
-                                echo "Wrong Password";
+
+                                if ($password == $output[0]["password"]) {
+                                    #echo "Password Match". $output[0]["password"] ."";
+
+                                    #echo "Name ". $output[0]["username"] ."";
+                                    include "views/profile.php";
+
+                                    #include "profile.php";
+
+
+                                } else {
+                                    echo "Wrong Password";
+                                }
+
+
                             }
+
+                        
             
                         }
                     
-                    #include "views/profile.php";
+                    
                 }
         
         break;
