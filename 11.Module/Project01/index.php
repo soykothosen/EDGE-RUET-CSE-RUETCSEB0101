@@ -82,7 +82,7 @@ switch ($request) {
     
                  #echo "Success Insert Query";
 
-                 echo "Log In Page"
+                 echo "Log In Page";
     
                 }
             
