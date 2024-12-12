@@ -1,0 +1,17 @@
+{
+    "name": "soykot/pdfmaker",
+    "autoload": {
+        "psr-4": {
+            "Soykot\\Pdfmaker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Soykot Hosen",
+            "email": "soykothosen1603028@gmail.com"
+        }
+    ],
+    "require": {
+        "tecnickcom/tcpdf": "^6.7"
+    }
+}
