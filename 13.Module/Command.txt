@@ -17,3 +17,13 @@ composer require tecnickcom/tcpdf
 composer require phpoffice/phpspreadsheet
 
 
+Step One - composer Install
+
+Step 2 - composer init
+
+Step 3 - pdf package Install 
+composer require tecnickcom/tcpdf
+
+index.php 
+
+
