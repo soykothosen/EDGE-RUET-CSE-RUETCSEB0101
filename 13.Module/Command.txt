@@ -1,0 +1,19 @@
+https://getcomposer.org/
+
+composer --version
+
+composer show
+
+composer remove vendor/library-name
+
+composer require tecnickcom/tcpdf
+
+composer require phpoffice/phpspreadsheet
+
+composer require phpmailer/phpmailer
+
+composer require tecnickcom/tcpdf
+
+composer require phpoffice/phpspreadsheet
+
+
